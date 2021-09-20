@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pintando con websockets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="content">
+    <canvas id="canvas"></canvas>
+        <div class="colors">
+            <button id="color1" onclick="setColor('red')"></button>
+            <button id="color2" onclick="setColor('yellowgreen')"></button>
+            <button id="color3" onclick="setColor('blue')"></button>
+            <button id="color4" onclick="setColor('yellow')"></button>
+            <button id="color5" onclick="setColor('black')"></button>
+        </div>
+    <div class="delete">
+        <button id="btn_delet" onclick="delete_all()">X</button>
+    </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
